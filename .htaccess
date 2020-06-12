@@ -1,0 +1,77 @@
+﻿
+RewriteOptions inherit
+# 首頁
+DirectoryIndex index.php index.html
+
+#顯示BUG
+php_flag display_errors on
+php_value error_reporting -1
+
+# 隱藏目錄下所有檔案
+Options -Indexes
+
+# 錯誤頁
+# -------------------------------------------------
+
+# Forbidden
+ErrorDocument 403 /source/errors/404.html 
+
+# File not found
+ ErrorDocument 404 /source/errors/404.html
+
+# 網址覆寫
+# -------------------------------------------------
+
+RewriteEngine ON
+
+#設定跟目錄
+Rewritebase /
+
+# https轉址
+# -------------------------------------------------
+
+ RewriteCond %{SERVER_PORT} !^443$
+ RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+ RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+ RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+ RewriteRule ^(.*)?$ https://%{SERVER_NAME}/$1 [L,R]
+ 
+# （１）例如：http://nasrio.com/blog/
+#           http://nasrio.com/blog
+RewriteRule ^([^/]*[^api^apo^others^upload])$ /index.php?url1=$1 [L]
+RewriteRule ^[^\S]*$ index.php [L]
+RewriteRule ^([^\/\.]*)$ index.php?url1=$1 [L]
+RewriteRule ^([^\/\.]*)\/[^\S]*$ index.php?url1=$1 [L]
+
+# （２）例如：http://nasrio.com/blog/6/
+RewriteRule ^([^\/\.]*)\/([^\/\.]*)$ index.php?url1=$1&url2=$2 [L]
+RewriteRule ^([^\/\.]*)\/([^\/\.]*)\/[^\S]*$ index.php?url1=$1&url2=$2 [L]
+
+
+# （３）例如：http://nasrio.com/blog/6/share/
+RewriteRule ^([^\/\.]*)\/([^\/\.]*)\/([^\/\.]*)$ index.php?url1=$1&url2=$2&url3=$3 [L]
+RewriteRule ^([^\/\.]*)\/([^\/\.]*)\/([^\/\.]*)\/[^\S]*$ index.php?url1=$1&url2=$2&url3=$3 [L]
+
+# （4）例如：http://nasrio.com/blog/6/share/a/
+RewriteRule ^([^\/\.]*)\/([^\/\.]*)/([^\/\.]*)\/([^\/\.]*)$ index.php?url1=$1&url2=$2&url3=$3&url3=$3 [L]
+RewriteRule ^([^\/\.]*)\/([^\/\.]*)/([^\/\.]*)\/([^\/\.]*)\/[^\S]*$ index.php?url1=$1&url2=$2&url3=$3&url4=$4 [L]
+
+
+
+# 允許被跨網域json
+# -------------------------------------------------
+<Files "*.json">
+  Header set Access-Control-Allow-Origin "*"
+</Files>
+
+<Files "*.png">
+  Header set Access-Control-Allow-Origin "*"
+</Files>
+
+# 關閉暫存
+# -------------------------------------------------
+<IfModule mod_headers.c>
+	Header set Cache-Control "no-cache, no-store, must-revalidate"
+	Header set Pragma "no-cache"
+	Header set Expires 0
+</IfModule>

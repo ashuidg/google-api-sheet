@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "wdmaptest",
+  "private_key_id": "0f2e6d5ef34bb5b112e3ef18661035d7dbb6ca19",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCy+Q0u9SGp54WC\nevhV2/+DOBvAybX4GSH3X7BZWLuw16KxqtuRQ8V7J2XrEkv/3x4MR9XtHQSjZHBM\nUtuRddGpZD93XyJqY+3XNKuf4a1p0mISeXSO43TKrgXY+uo0wdhjg4jM5seGWVvP\nSfOuMgDwadeFhhxNaQ7gyuVrvwvh76M1wlTMVILURN5GjHwGYixoN/H8POHRSAPc\naPMVqcIash8iKP7an9xCxzduUTCSmoVPwC6RNvrPx1nkCgUE0/p2X7fY8+al/DjE\nSMcSqBfTt+Ct4pML4OPqBSsq1BVVZsd0yM1XG8yhLl+2hNhmU5g7HCh1Om4W+evG\nvpHo6ZkhAgMBAAECgf95snktVszvB9oRCF7t2H4vGjK2vDl3apFeKeaQTFmbS8ze\nRmORyOyBpTwxNt4PvVtIZZeazR7KSi4nm4xnbMmilXEZpx/lJl/rLW5iyv7B9Ir/\nD6IbR2hd8IH+wDwMLmdCNYXuawXvwYGxu0sZf04SZR8Q/ElifX2lxIqN/txz1IxM\nM8jcZCQL1FOh/Sz2giSclmQHRxxdPGPPSPwDqm1puf6xnFSt21IteJZKLSJTGQAy\nOo94Q0OYQURqUeWUgP6Y6n4hFWADQg6KEcnfRMQvcDsAf/UfFAcN1IIpy0sok+TP\nlddhNHex+dlr+DwSB7MSRgcO9Oqt0rvZfKp6vwECgYEA17T2vZ2T/JEobqTyq9Ai\nAAkTGMFbLEm14iP3S06x7X/BkDIObqDSAoHHBbYzudml58buwMwMnNliV12u6ox1\nEZ/wdU7iFP0zagr7BdB3j0RoDzkC2LRRwcmEUNE0cESk+r3EShsaCff/J6i85q2p\nUZQwH/9SjHxcf7j80SQ4OKECgYEA1Gd6ShOFoC6WLxTwCMyjBM4U8abOWG/ZAFmb\ng2irIz0yPQwyV9WbpSYyeEXJE5OyMaUd5CYjnq9rZDar2vEGnR2GCNKRwar1QLV2\nPus8otAQrL+Gzgw4E4W/BwemttAthF58Au7599Tn83aIXYH8SOSAwc0nrN7hfBlc\nTGIrEIECgYEAuhqwkzIEPvGCP8vibygYXY12w3H3VoOWADDlqDySOIV0HBOD7iCk\ncHNFogDsKdnFUO6KiR7DdwP628PBKS3bx0QFs0BGwLMgC8rDfuW4cYwkd5XJhew1\naYuStCN7Ka2f5ZGabBFr6tPjeXUU3bVRE0hWKRUhRIH7UFrrDQpB02ECgYAG13px\n7mUMftOpmpQMxIKvwe+cxRG6eYfU4g4HUpTIosz+eGkauS+1RyCzDRRoBAbmYHox\nAiV9lAryhGxOthrPbscFe7rkMRyLRA0WA7/FQsx2tAiklHIt9s3rbQyqsNP2gpCe\nC5KTsBD0n6nO0UQOGQYot/ICOH+s3qhBcZwPgQKBgF/yx6QgbN52mE+Aaa8MwqvV\nDpcHy5yEwWrgkiBYDpnhT1R7+Huv+4KdaTVBd0xm6qPQ1rfdQU/jLO5jkG+y96q2\nA0E5pPmzBdagGCwtwUP9l6tb5jA9eAjV0dVjpJmgEQmM+Tyy0dft7mtPhByC495x\nn04V+7s5jYGzBDBhlYuF\n-----END PRIVATE KEY-----\n",
+  "client_email": "nasriogapi@wdmaptest.iam.gserviceaccount.com",
+  "client_id": "113533629375710828100",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nasriogapi%40wdmaptest.iam.gserviceaccount.com"
+}
